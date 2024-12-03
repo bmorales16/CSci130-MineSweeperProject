@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Leaderboard</h1>
+	</div>
+	
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+					<th>Rank</th>
+					<th>Username</th>
+					<th>Score</th>
+				</tr>
+			</thead>
+			<tbody id="leaderboard-body">
+				<!-- Dynamic table -->
+			</tbody>
+		</table>
+	</div>
+	
+	<footer class="footer">
+        <a href="main.html">Go to Main Page</a>
+    </footer>
+    <script>
+        // Fetch leaderboard data from the server
+        fetch('fetch_leaderboard.php')
+            .then(response => response.json())
+            .then(data => {
+                const tbody = document.getElementById('leaderboard-body');
+                let rank = 1;
+                data.forEach(user => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${rank++}</td>
+                        <td>${user.username}</td>
+                        <td>${user.score}</td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error fetching leaderboard data:', error));
+    </script>
+</body>
+</html>

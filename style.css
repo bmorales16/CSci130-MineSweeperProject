@@ -1,0 +1,184 @@
+/*Main Page style------------------------*/
+/* Main Buttons */
+.main-buttons .button {
+    display: block;
+    background-color:#002e6d;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.main-buttons .button:hover {
+    background-color: #b00029;
+}
+
+.main-buttons a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-buttons a:visited {
+    color: white;
+}
+
+/*Contact info style-----------------------*/
+.contact-info {
+    margin-bottom: 60px;
+}
+.contact-info p {
+    margin: 8px 0;
+}
+
+/*Help style-------------------------*/
+.container {
+    text-align: center;
+}
+
+/*Log in style--------------------------------------*/
+.login-box {
+    background-color: #ffffff;
+    padding: 20px;            
+    border-radius: 8px;      
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: left;         
+    max-width: 400px;       
+    margin: 20px auto;       
+}
+
+.login-box h1 {
+    margin-bottom: 20px;     
+    color: #002e6d;          
+    text-align: center;     
+}
+
+.login-box label {
+    display: block;          
+    margin-bottom: 5px;      
+    font-weight: bold;       
+    color: #333;
+}
+
+.login-box input {
+    width: 100%;              
+    padding: 10px;           
+    margin-bottom: 15px;     
+    border: 1px solid #ccc;   
+    border-radius: 4px;     
+    font-size: 1em;          
+}
+
+.login-box button {
+    width: 100%;             
+    padding: 10px;           
+    margin-bottom: 10px;      
+    background-color: #002e6d; 
+    color: #fff;              
+    border: none;            
+    border-radius: 4px;      
+    font-size: 1em;          
+    cursor: pointer;         
+    transition: background-color 0.3s ease; 
+}
+
+.login-box button:hover {
+    background-color: #b00029; 
+}
+
+.login-box form {
+    margin-bottom: 10px;      
+}
+
+/* Base Styling for all the pages-------------------------------*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.header {
+    background-color: #db0032;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.h1 {
+    text-align: center;
+}
+
+/* Main Content Container */
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #002e6d;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+/* Leaderboard-specific styles */
+table {
+    width: 100%; /* Make the table take the full width of the container */
+    border-collapse: collapse; /* Remove spacing between table cells */
+    margin: 20px 0; /* Add some vertical space around the table */
+    text-align: left; /* Align text to the left */
+    font-size: 1em;
+}
+
+thead th {
+    background-color: #002e6d; /* Dark blue background for header */
+    color: white; /* White text for header */
+    padding: 10px; /* Add padding to header cells */
+    text-align: left; /* Align header text to the left */
+    font-weight: bold; /* Make headers bold */
+}
+
+tbody td {
+    padding: 10px; /* Add padding to body cells */
+    border-bottom: 1px solid #ccc; /* Add a border below each row */
+    text-align: left; /* Align text to the left */
+}
+
+tbody tr:hover {
+    background-color: #f4f4f9; /* Light gray background on hover */
+}
+
+/* Optional: Center the table in the container */
+.container {
+    width: 80%;
+    margin: 20px auto; /* Center container horizontally */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+

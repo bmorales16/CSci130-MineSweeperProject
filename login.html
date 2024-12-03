@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Minesweeper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    Welcome to Minesweeper
+  </div>
+  <div class="login-box">
+    <h1>Login</h1>
+    <form id="login-form" method="POST">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      
+      <!-- Buttons -->
+      <button type="button" id="login-button">Login</button>
+      <button type="button" id="signup-button">Sign Up</button>
+    </form>
+  </div>
+  <div class="footer">
+    <p>&copy; 2024 Minesweeper. All Rights Reserved.</p>
+  </div>
+
+  <script>
+    //Login button
+    document.getElementById('login-button').addEventListener('click', function () {
+      const form = document.getElementById('login-form');
+      form.action = 'login_handler.php'; // Set action to login handler
+      form.submit(); 
+    });
+
+    //Sign Up button
+    document.getElementById('signup-button').addEventListener('click', function () {
+      const form = document.getElementById('login-form');
+      form.action = 'signup_handler.php'; // Set action to signup handler
+      form.submit();
+    });
+  </script>
+</body>
+</html>
