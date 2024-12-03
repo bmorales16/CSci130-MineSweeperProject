@@ -1,0 +1,102 @@
+/* General styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+#board {
+    display: grid; /* Enables dynamic grid layout */
+    margin: 20px auto;
+    border: 10px solid darkgrey;
+    background-color: lightgray;
+}
+
+#board .tile {
+    width: 40px;
+    height: 40px;
+    border: 1px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.tile-clicked {
+    background-color: darkgrey;
+}
+
+.x1 {
+    color: blue;
+}
+
+.x2 {
+    color: green;
+}
+
+.x3 {
+    color: red;
+}
+
+.x4 {
+    color: navy;
+}
+
+.x5 {
+    color: brown;
+}
+
+.x6 {
+    color: teal;
+}
+
+.x7 {
+    color: black;
+}
+
+.x8 {
+    color: gray;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+#flag-button {
+    background-color: lightgrey;
+}
+
+#restart-button, #settings-button {
+    background-color: #f0f0f0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #board {
+        width: 100%;
+        height: auto;
+    }
+
+    #board .tile {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+}
