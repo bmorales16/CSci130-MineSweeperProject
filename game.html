@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="minesweeperGame.js" defer></script>
+    <title>Minesweeper</title>
+</head>
+<body>
+    <h1>Minesweeper</h1>
+    
+    <!-- Game Information -->
+    <div class="game-info">
+        <p>Mines: <span id="mines-count">0</span></p>
+        <p>Time: <span id="timer">0</span> seconds</p>
+    </div>
+    
+    <!-- Game Options -->
+    <div class="game-options">
+        <label for="mine-count">Mines:</label>
+        <input id="mine-count" type="number" min="1" max="64" value="5">
+        
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy (8x8)</option>
+            <option value="medium">Medium (16x16)</option>
+            <option value="hard">Hard (24x24)</option>
+        </select>
+        
+        <label for="win-condition">Win Condition:</label>
+        <select id="win-condition">
+            <option value="clear-grid">Clear the whole grid</option>
+            <option value="select-mines">Correctly select all the mines</option>
+        </select>
+
+        <label for="theme">Theme:</label>
+        <select id="theme">
+            <option value="default">Default</option>
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+        </select>
+    </div>
+    
+    <!-- Game Controls -->
+    <div class="game-controls">
+        <button id="flag-button">🚩 Flag</button>
+        <button id="restart-button">Restart</button>
+    </div>
+    
+    <!-- Game Board -->
+    <div id="board"></div>
+    
+    <!-- Background Music -->
+    <audio id="background-music" src="One Man Symphony - A New Day's Hurry (Free) - 01 A New Day Begins (General Background Music).mp3" loop></audio>
+    <audio id="mine-sound" src="mine.mp3"></audio>
+    <audio id="win-sound" src="win.mp3"></audio>
+</body>
+</html>
